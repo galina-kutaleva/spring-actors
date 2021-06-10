@@ -1,0 +1,10 @@
+{
+  "query": "select data->>'name' from instance where data->>'id' = ?",
+  "whitelist": {
+    "name": {
+      "expression": "data->>'id'",
+      "typeToCast": "string"
+    }
+  }
+}
+

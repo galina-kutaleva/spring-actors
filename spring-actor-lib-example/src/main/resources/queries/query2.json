@@ -1,0 +1,11 @@
+{
+"query": "select data from test %FILTER_1% %SORT_1% %PAGE%",
+  "whitelist": {
+    "name": {
+      "filterTag": "FILTER_1",
+      "sortingTag": "SORT_1",
+      "expression": "data->>'id'",
+      "typeToCast": "string"
+    }
+  }
+}
